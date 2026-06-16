@@ -48,6 +48,7 @@ export default function PureReactEventPage() {
             // Efek hover pakai CSS biasa
             className="event-card bg-white rounded-xl shadow-lg cursor-pointer overflow-hidden"
           >
+            
             <img
               src={event.image}
               alt={event.title}
