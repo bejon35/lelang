@@ -1,10 +1,8 @@
-from fastapi import APIRouter
+from fastapi import FastAPI
+from app.routes.dataset import router as dataset_router
 
-router = APIRouter()
+app = FastAPI()
 
-@router.get("/predict")
-def predict():
-
-    return {
-        "message": "halo"
-    }
+app.include_router(
+    dataset_router
+)
